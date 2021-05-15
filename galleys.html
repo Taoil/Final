@@ -1,0 +1,134 @@
+<!doctype html>
+</html>
+<head>
+	<meta charset="utf-8">
+	<title>Css Image Hover Effects</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<style>
+ body{
+	 margin: 0;
+	 padding: 0;
+	 background: maroon;
+	 font-family: sans-serif;
+ }
+ .container{
+	 width: 1280px;
+	 margin: 70px auto 0;
+	 display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+ }
+.container .box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: white;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.container .box .imgBox{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img{
+	max-width: 75%;
+	transition: tranform 2s;
+}
+.container .box:hover .imgBox img{
+	transform: scale(1.5);
+}
+.container .box .details{
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	bottom: 6px;
+	right: 6px;
+	background: rgba(0,0,0,.0);
+	transform: scaleY(1);
+	transition: transform .5s;
+}
+.container .box:hover .details{
+	transform: scaleY(1);
+}
+.container .box .details .content{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50);
+	text-align: center;
+	padding: 15px;
+	color: black;
+}
+@media screen and (max-width:600px) {
+  section {
+    width: 100%;
+  }
+</style>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="imgBox">
+			<img src="images/principal.jpg">
+		</div>
+		<div class="details">
+		<div class="content">
+		<h2><b>Principal</b></h2>
+		<p><b>Brenda M.Carino</b></p>
+		</div>
+		</div>
+		<div class="box">
+		<div class="imgBox">
+			<img src="images/sango.jpg">
+		</div>
+		<div class="details">
+		<div class="content">
+		<h2><b>Baguio City</b></h2>
+		<p><b>National High School</b></p>
+		</div>
+		</div>
+		</div>
+		<div class="box">
+		<div class="imgBox">
+			<img src="images/archery.jpg">
+		</div>
+		<div class="details">
+		<div class="content">
+		<h2><b>BCNHS ATHLETES SHINE</b></h2>
+		<p><b>IN 2019 BATANG PINOY</b></p>
+		</div>
+		</div>
+		</div>
+		<div class="box">
+		<div class="imgBox">
+			<img src="images/visit.jpg">
+		</div>
+		<div class="details">
+		<div class="content">
+		<p><b>Briones visits city high after PISA FEAT</b></p>
+		</div>
+		</div>
+		</div>
+		<div class="box">
+		<div class="imgBox">
+			<img src="images/brigs.jpg">
+		</div>
+		<div class="details">
+		<div class="content">
+		<b>CITY HIGH BRIGADA</b>
+		<p><b>ESKWELA HALL OF FAME AWARDEE</b></p>
+		</div>
+		</div>
+		</div>
+		<div class="box">
+		<div class="imgBox">
+			<img src="images/awards.jpg">
+		</div>
+		<div class="details">
+		<div class="content">
+		<p><b>ACADEMIC EXELLENCE</b></p>
+		</div>
+		</div>
+		</div>
+</body>
+</html>
